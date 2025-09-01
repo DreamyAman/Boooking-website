@@ -180,5 +180,21 @@ li .nav-link:hover{
     background-color:var(--btn-bg-clr);
 }
 
+.modal input{
+    width: 10em;
+    height: 2em;
+    padding: 1em;
+    display: block;
+}
+.modal label{
+    width: 8em;
+    display: block;
+}
 
+.nav-link .active-img{
+    position: absolute;
+}
+.nav-link:hover .active-img{
+    display: none;
+}
 
