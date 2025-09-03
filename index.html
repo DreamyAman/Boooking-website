@@ -108,8 +108,8 @@
         
             <div>
             
-            <form class="row px-4 py-2 search">
-                <div class="col-lg-3 mx-2 hstack">
+            <form class="row px-4 py-4 search rounded-5">
+                <div class="col-lg-3 mx-2 d-flex align-items-center">
                     <i class="fa-solid fa-location-dot"></i>
                     <div class="vstack">
                         <label for="location" class="fw-light">Location</label>
@@ -117,7 +117,7 @@
                 </div>
                 </div>
 
-                <div class="col-lg-3 mx-2 hstack">
+                <div class="col-lg-3 mx-2 d-flex align-items-center">
                     <i class="fa-solid fa-calendar-days"></i>
                     <div class="vstack">
                         <label for="location" class="fw-light">Checkin-out</label>
@@ -125,8 +125,8 @@
                 </div>
                 </div>
 
-                <div class="col-lg-3 mx-2 hstack">
-                    <img width="50px" src="assets/icons/profile.png" alt="">
+                <div class="col-lg-3 mx-2 d-flex align-items-center">
+                    <i class="fa-solid fa-user"></i>
                     <div class="vstack">
                         <label for="location" class="fw-light">Guest&rooms</label>
                         <input type="text" id="location" placeholder="2Guests 1room">
@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="col-lg-2 d-flex justify-content-center ms-3">
-                    <button class="search-b border-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="border-0 bg-transparent search-b my-4 my-lg-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>    
             </form>
 
@@ -179,7 +179,7 @@
 
     <section class="facility">
         <div class="container mt-5">
-            <div class="row">
+            <div class="row d-flex flex-column flex-lg-row">
 
                 <div class="col col-lg-6 col-xs-6 col-md-12">
                     <img width="80%" class="rounded-5 mx-auto" src="assets/images/image-1.png" alt="">
@@ -232,23 +232,23 @@
                     <h1 class="fw-bold fs-700 text-center">Featured Hotels</h1>
             </div>
 
-            <div class="row mt-5">
-                <div class="col col-3 card border-0">
+            <div class="row d-flex flex-column flex-lg-row mt-5">
+                <div class="col col-lg-3 card border-0">
 
                     <img  class="rounded-4 hotels" src="assets/images/resort-img-1.png" alt="">
-                    <span class="col-4 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>New York</span>
+                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>New York</span>
                     <span class="fw-bold">Baga Comfort</span>
 
                     <div class="row">
                         <span class="col-8 text-success"><strong>$455</strong>/staring at</span>
-                        <span class="col ms-4"><strong>4.5</strong><i class="fa-solid fa-star"></i></span>
+                        <span class="hotel-rating col ms-4"><strong>4.5</strong><i class="fa-solid fa-star"></i></span>
                     </div>
                 </div>
 
-                <div class="col col-3 card border-0">
+                <div class="col col-lg-3 card border-0">
 
                     <img class="rounded-4 hotels" src="assets/images/resort-img-2.png" alt="">
-                    <span class="col-4 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>California</span>
+                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>California</span>
 
                     <span class="rounded-5 bg-dark text-light">
                         <img src="assets/icons/location-dark.png" alt="">
@@ -258,31 +258,31 @@
 
                     <div class="row">
                         <span class="col-8 text-success"><strong>$585</strong>/staring at</span>
-                        <span class="col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
+                        <span class="hotel-rating col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
                     </div>
                 </div>
 
-                <div class="col col-3 card border-0">
+                <div class="col col-lg-3 card border-0">
 
                     <img class="rounded-4 hotels" src="assets/images/resort-img-3.png" alt="">
-                    <span class="col-5 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Los Angelos</span>
-                    <span class="fw-bold">New Age Hotel</span>
+                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Los Angelos</span>
+                    <span class="fw-bold fs-100">New Age Hotel</span>
 
                     <div class="row">
                         <span class="col-8 text-success"><strong>$385</strong>/staring at</span>
-                        <span class="col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
+                        <span class="hotel-rating col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
                     </div>
                 </div>
 
-                <div class="col col-3 card border-0">
+                <div class="col col-lg-3 card border-0">
 
                     <img class="rounded-4" src="assets/images/resort-img-4.png" alt="">
-                    <span class="col-4 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Chicago</span>
+                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Chicago</span>
                     <span class="fw-bold">Helios Beach Resort</span>
 
                     <div class="row">
                         <span class="col-8 text-success"><strong>$665</strong>/staring at</span>
-                        <span class="col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
+                        <span class="hotel-rating col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
                     </div>
                 </div>
             </div>
@@ -292,15 +292,54 @@
     <section>
         <div class="container ">
             <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-1 m-5"><img src="assets/images/company-1.png" alt=""></div>
-                <div class="col-1 m-5"><img src="assets/images/company-2.png" alt=""></div>
-                <div class="col-1 m-5"><img src="assets/images/company-3.png" alt=""></div>
-                <div class="col-1 m-5"><img src="assets/images/company-4.png" alt=""></div>
-                <div class="col-1 m-5"><img src="assets/images/company-5.png" alt=""></div>
-                <div class="col-1 m-5"><img src="assets/images/company-6.png" alt=""></div>
-        </div>
+                <div class="col-2 col-lg-1 mx-auto"><img src="assets/images/company-1.png" alt=""></div>
+                <div class="col-2 col-lg-1 mx-auto"><img src="assets/images/company-2.png" alt=""></div>
+                <div class="col-2 col-lg-1 mx-auto"><img src="assets/images/company-3.png" alt=""></div>
+                <div class="col-2 col-lg-1 mx-auto"><img src="assets/images/company-4.png" alt=""></div>
+                <div class="col-2 col-lg-1 mx-auto"><img src="assets/images/company-5.png" alt=""></div>
+                <div class="col-2 col-lg-1 mx-auto"><img src="assets/images/company-6.png" alt=""></div>
+            </div>
         </div>
     </section>
 
+    <section>
+        <section>
+        <div class="container mt-5">
+            <div class="row d-flex flex-column flex-lg-row">
+
+                <div class="col col-lg-6 col-xs-6 col-md-12">
+                    <img width="80%" class="rounded-5 mx-auto" src="assets/images/reviews.png" alt="">
+                </div>
+
+                <div class="col mt-5 col-lg-4 ">
+                    
+                    <div class="row quote">
+                        <div class="col-1 mb-3">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p>Moonligth newspaper up its enjoyment agrreable depending.Timed voice share led him to eiden noisy young. at weddings believed in laughing.</p>
+                    </div>
+
+                    <div class="row d-flex">
+                       <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i> 
+                       <i class="fa-solid fa-star-half-stroke"></i>
+                       </span>
+
+                       <span class="fw-bold">Billy Vasquez</span>
+                       <span class="para">CEO of apple</span>
+                    </div>
+                    
+
+                </div>
+        </div> 
+    </section>
+    </section>
 </body>
 </html>

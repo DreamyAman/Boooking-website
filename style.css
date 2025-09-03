@@ -225,18 +225,13 @@ li .nav-link:hover{
 }
 
 .search i{
+    display: flex;
+    align-items: center;
     font-size: var(--fs-500);
     color: var(--clr-accent-100);
 }
 .search-b i{
-    color: var(--clr-netural-100);
-}
-.search-b{
-    font-size: 2em;
-    color: white;
-    background-color: #5143d9;
-    border-radius: 50%;
-    padding: 8%;
+    color: #5143d9;
 }
 
 .facility i{
@@ -271,4 +266,23 @@ li .nav-link:hover{
     position: absolute;
     top: 85%;
     left: 10%;
+}
+
+.quote i{
+    font-size: 4em;
+    color: #5143d9;
+}
+
+.hotel-rating i{
+    color: #f6c32e;
+}
+
+.rating{
+    width: 5%;
+    display: flex;
+    color: #f6c32e;
+}
+
+.rating i{
+    font-size: 1em;
 }
