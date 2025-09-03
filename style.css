@@ -152,6 +152,20 @@ ol[role="list"] {
     font-size: var(--fs-900)
 }
 
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--clr-accent-100);
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-accent-100);
+}
+
 /* general-styling */
 
 body{
