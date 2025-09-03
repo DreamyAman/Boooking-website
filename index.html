@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    </head>
 <body>
-
+    
     <nav class="navbar navbar-expand-lg m-3 ">
         <div class="container-fluid d-flex align-items-center ">
             
@@ -52,28 +53,24 @@
 
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active d-flex mx-2">
-                        <img class="active-img" width="25em" src="assets/icons/hotel.png" alt="">
-                        <img class="hover-img" width="25em" src="assets/icons/hotel-hover.png" alt="">Home</a>
+                        <a href="#" class="nav-link active d-flex align-items-center mx-2">
+                        <i class="fa-solid fa-hotel fa-lg"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex mx-2">
-                        <img class="active-img" width="25em" src="assets/icons/airplane.png" alt="">
-                        <img class="hover-img" width="25em" src="assets/icons/airplane-h.png" alt="">Flight</a>
+                        <a href="#" class="nav-link d-flex align-items-center mx-2 ">
+                        <i class="fa-solid fa-plane fa-lg"></i>Flight</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex mx-2">
-                        <img class="active-img" width="25em" src="assets/icons/gps.png" alt="">
-                        <img class="hover-img" width="25em" src="assets/icons/gps-h.png" alt="">Tour</a>
+                        <a href="#" class="nav-link d-flex align-items-center mx-2">
+                        <i class="fa-solid fa-earth-americas fa-lg"></i>Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex mx-2">
-                        <img class="active-img" width="25em" src="assets/icons/taxi.png" alt="">
-                        <img class="hover-img" width="25em" src="assets/icons/taxi-h.png" alt="">Cab</a>
+                        <a href="#" class="nav-link d-flex align-items-center mx-2">
+                        <i class="fa-solid fa-taxi fa-lg"></i>Cab</a>
                     </li>
                 </ul>
 
-                <button class="btn ms-5  btn-outline-secondary"><img width="25em" src="assets/icons/notification.png" alt=""></button>
+                <button class="btn ms-5  btn-outline-secondary"><i class="fa-solid fa-bell"></i></button>
                 <a class="btn ms-3" href=""><img width="40em" src="assets/icons/owner-img.webp" alt=""></a>
 
             </div>
@@ -113,7 +110,7 @@
             
             <form class="row px-4 py-2 search">
                 <div class="col-lg-3 mx-2 hstack">
-                    <img width="50px" src="assets/icons/location.png" alt="">
+                    <i class="fa-solid fa-location-dot"></i>
                     <div class="vstack">
                         <label for="location" class="fw-light">Location</label>
                         <input type="text" id="location" placeholder="Select-Location">
@@ -121,7 +118,7 @@
                 </div>
 
                 <div class="col-lg-3 mx-2 hstack">
-                    <img width="50px" src="assets/icons/clender.png" alt="">
+                    <i class="fa-solid fa-calendar-days"></i>
                     <div class="vstack">
                         <label for="location" class="fw-light">Checkin-out</label>
                         <input type="text" id="location" placeholder="19 sep-28sep">
@@ -137,7 +134,7 @@
                 </div>
 
                 <div class="col-lg-2 d-flex justify-content-center ms-3">
-                    <button class="border-0 bg-transparent mx-auto" type="submit"><img src="assets/icons/search.png" alt=""></button>
+                    <button class="search-b border-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>    
             </form>
 
@@ -180,7 +177,7 @@
         </div>
     </section>
 
-    <section class="search-area">
+    <section class="facility">
         <div class="container mt-5">
             <div class="row">
 
@@ -199,13 +196,13 @@
 
                     <div class="row mx-auto">
                         <div class="col col-4 mx-auto p-2">
-                            <img  width="60em" src="assets/images/food.png" alt="">
+                            <i class="fa-1 fa-solid fa-utensils"></i>
                             <h3 class="fw-bold fs-300">Quality Food</h3>
                             <p class="para">Departure defective arranging raptuyous did. Conduct denied adding worth little.</p> 
                         </div>
 
                         <div class="col col-4 mx-auto p-2">
-                            <img width="60em" src="assets/images/time.png" alt="">
+                            <i class="fa-2 fa-solid fa-stopwatch"></i>
                             <h3 class="fw-bold fs-300">Quick Services</h3>
                             <p class="para">Sipposing so be resolving breakfast am or perfectly.</p>
                         </div>
@@ -213,13 +210,13 @@
 
                     <div class="row mx-auto">
                         <div class="col col-4 mx-auto p-2">
-                            <img width="60em" src="assets/images/security.png" alt="">
+                            <i class="fa-3 fa-solid fa-shield-halved"></i>
                             <h3 class="fw-bold fs-300">High Security</h3>
                             <p class="para">Arranging rapturous did belive him all had support.</p> 
                         </div>
 
                         <div class="col col-4 mx-auto p-2">
-                            <img width="60em" src="assets/images/charge.png" alt="">
+                           <i class="fa-4 fa-solid fa-bolt-lightning"></i>
                             <h3 class="fw-bold fs-300">24 Hour Alert</h3>
                             <p class="para">Rapturous did belive him all had support.</p>
                         </div>
@@ -229,5 +226,69 @@
         </div> 
     </section>
 
+    <section>
+        <div class="container">
+            <div class="row">
+                    <h1 class="fw-bold fs-700 text-center">Featured Hotels</h1>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col col-3 card border-0">
+
+                    <img  class="rounded-4 hotels" src="assets/images/resort-img-1.png" alt="">
+                    <span class="col-4 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>New York</span>
+                    <span class="fw-bold">Baga Comfort</span>
+
+                    <div class="row">
+                        <span class="col-8 text-success"><strong>$455</strong>/staring at</span>
+                        <span class="col ms-4"><strong>4.5</strong><i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+
+                <div class="col col-3 card border-0">
+
+                    <img class="rounded-4 hotels" src="assets/images/resort-img-2.png" alt="">
+                    <span class="col-4 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>California</span>
+
+                    <span class="rounded-5 bg-dark text-light">
+                        <img src="assets/icons/location-dark.png" alt="">
+                    </span>
+
+                    <span class="fw-bold">New Apollo Hotel</span>
+
+                    <div class="row">
+                        <span class="col-8 text-success"><strong>$585</strong>/staring at</span>
+                        <span class="col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+
+                <div class="col col-3 card border-0">
+
+                    <img class="rounded-4 hotels" src="assets/images/resort-img-3.png" alt="">
+                    <span class="col-5 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Los Angelos</span>
+                    <span class="fw-bold">New Age Hotel</span>
+
+                    <div class="row">
+                        <span class="col-8 text-success"><strong>$385</strong>/staring at</span>
+                        <span class="col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+
+                <div class="col col-3 card border-0">
+
+                    <img class="rounded-4" src="assets/images/resort-img-4.png" alt="">
+                    <span class="col-4 rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Chicago</span>
+                    <span class="fw-bold">Helios Beach Resort</span>
+
+                    <div class="row">
+                        <span class="col-8 text-success"><strong>$665</strong>/staring at</span>
+                        <span class="col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 </body>
 </html>
