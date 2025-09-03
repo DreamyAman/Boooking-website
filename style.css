@@ -1,4 +1,8 @@
+/* Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Font closes */
 
 /* reseting the deafults */
 
@@ -34,6 +38,8 @@ ol[role="list"] {
 .container{
     width: 100%;
 }
+
+/* Roots/required stylings */
 
 :root{
     --clr-accent-200:hsl(250deg 33% 5%);
@@ -84,7 +90,10 @@ ol[role="list"] {
     }
 }
 
-/* utility classes */
+
+/* Roots/required stylings closes */
+
+/* Utility classes */
 
 .text-primary{
     color: var(--clr-accent-200);
@@ -166,7 +175,9 @@ a{
     color: var(--clr-accent-100);
 }
 
-/* general-styling */
+/* Utility classes closes */
+
+/* General-styling */
 
 body{
     font-size: var(--font-size-body);
@@ -308,3 +319,5 @@ li .nav-link:hover{
 .find-us i{
     font-size: 2em;
 }
+
+/* General styling closes */
