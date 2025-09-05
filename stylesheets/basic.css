@@ -1,0 +1,40 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Font closes */
+
+/* reseting the deafults */
+
+html{
+    scroll-behavior: smooth;
+}
+
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+img, picture, svg { 
+    max-width: 100%;
+    display: block;
+}
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none; 
+}
+
+.container{
+    width: 100%;
+}

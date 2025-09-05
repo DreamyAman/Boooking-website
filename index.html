@@ -5,617 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    </head>
+    <link rel="stylesheet" href="stylesheets/basic.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/webstyles.css">
+</head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg m-3 ">
-        <div class="container-fluid d-flex align-items-center ">
-            
-            <a href="#" class="navbar-brand fw-bold d-flex align-items-center ms-3 p-1 mb-2 mb-lg-0" style="width: 7em;">
-                <img src="assets/images/logo.png" style="width: 40%;"  alt="logo">
-                Booking
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a href="#" class="navbar-brand hstack fw-bold me-auto">
+                <img width="50em" src="assets/images/logo.png" alt="logo">Booking
             </a>
-            
-            <button class="navbar-toggler primary-button" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+
+            <button class="navbar-toggler me-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <button class="navbar-toggler me-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav-2">
+                <i class="fa-solid fa-grip"></i>
+            </button>
+
+            <button class="btn bg-light me-2"><a href="#"><i class="fa-solid fa-bell"></i></a></button>
+            <button class="btn bg-light me-2"><a href="#"><i class="fa-regular fa-user"></i></a></button>
+
             <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar nav">
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Listings</a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Listings</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Something</a></li>
                             <li><a class="dropdown-item" href="#">Something</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Pages</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Something</a></li>
                             <li><a class="dropdown-item" href="#">Something</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Accounts</a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Accounts</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">Something</a></li>
-                            <li><a href="#" class="dropdown-item">Something</a></li>
+                            <li><a class="dropdown-item" href="#">Something</a></li>
+                            <li><a class="dropdown-item" href="#">Something</a></li>
                         </ul>
                     </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">...</a></li>
                 </ul>
+            </div>
 
+            <div class="collapse navbar-collapse" id="nav-2">
+                <ul class="navbar nav me-xs-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">
+                        <i class="fa-solid fa-hotel"></i>Hotel</a>
+                    </li>
 
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active d-flex align-items-center mx-2">
-                        <i class="fa-solid fa-hotel fa-lg"></i>Home</a>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                        <i class="fa-solid fa-plane"></i>Flight</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center mx-2 ">
-                        <i class="fa-solid fa-plane fa-lg"></i>Flight</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center mx-2">
+
+                    <li class="nav-item"><a href="#" class="nav-link">
                         <i class="fa-solid fa-earth-americas fa-lg"></i>Tour</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center mx-2">
+
+                    <li class="nav-item"><a href="#" class="nav-link">
                         <i class="fa-solid fa-taxi fa-lg"></i>Cab</a>
                     </li>
                 </ul>
-
             </div>
-            <button class="btn ms-5  btn-outline-secondary"><i class="fa-solid fa-bell"></i></button>
-                <a class="btn ms-3" href=""><img width="40em" src="assets/icons/owner-img.webp" alt=""></a>
+
+            
         </div>
     </nav>
-
-    <!-- Navbar closes -->
-
-    <!-- Frist page/search area -->
-
-    <section class="search-area">
-        <div class="container mt-5">
-            <div class="row">
-
-             <div class="col col-lg-6 ">
-                <div class="row mx-auto">
-                    <h1 class="fw-bold fs-700">Find the top Hotels nearby.</h1>
-                </div>
-
-                <div class="row mx-auto">
-                    <p class="para my-3">We bring you only a stay option, but an experience in your budget to enjoy the luxury.</p>
-                </div>
-
-                <div class="row mx-auto">
-                    <div>
-                    <button class="btn-clr btn-bg-clr primary-button">Discover Now</button>
-                    <button class="btn "><i class="fa-regular fa-circle-play fa-2xl"></i>Watch our story</button>
-                    </div>
-                </div>
-
-                <div class="row mx-auto">
-                    <h3 class="fs-300 fw-bold py-5">Check availblity</h3>
-                </div>
-            </div>
-
-                <div class="col-12 col-lg-6">
-                <img width="90%" class="rounded-5 mx-auto" src="assets/images/pool-image.png" alt="">
-                </div>
-        
-            <div>
-            
-            <form class="row px-4 py-4 search rounded-5">
-                <div class="col-lg-3 mx-2 d-flex align-items-center">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div class="vstack">
-                        <label for="location" class="fw-light">Location</label>
-                        <input type="text" id="location" placeholder="Select-Location">
-                </div>
-                </div>
-
-                <div class="col-lg-3 mx-2 d-flex align-items-center">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <div class="vstack">
-                        <label for="location" class="fw-light">Checkin-out</label>
-                        <input type="text" id="location" placeholder="19 sep-28sep">
-                </div>
-                </div>
-
-                <div class="col-lg-3 mx-2 d-flex align-items-center">
-                    <i class="fa-solid fa-user"></i>
-                    <div class="vstack">
-                        <label for="location" class="fw-light">Guest &rooms</label>
-                        <input type="text" id="location" placeholder="2Guests 1room">
-                </div>
-                </div>
-
-                <div class="col-lg-2 d-flex justify-content-center ms-3">
-                    <button class="border-0 bg-transparent search-b my-4 my-lg-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>    
-            </form>
-
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- Search area closes -->
-
-    <!-- Offer section -->
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex flex-column flex-lg-row gap-3">
-
-        <div class="d-flex flex-column flex-lg-row border rounded-4 overflow-hidden mt-5">
-            <a href="#"><img class="offer-image" src="assets/images/image-2.png" alt="offer-1"></a>
-            <div class="col-6 p-2">
-                <h5 class="card-header border-0 bg-transparent text-center">Book&Enjoy</h5>
-            <p class="card-content fs-100 text-center">20% off on the best availble availble room rate</p>
-            </div>
-        </div>
-
-        <div class="d-flex flex-column flex-lg-row border rounded-4 overflow-hidden mt-5">
-            <a href="#"><img class="offer-image" src="assets/images/image-3.png" alt="offer-2"></a>
-            <div class="col-6 p-2">
-                <h5 class="card-header border-0 bg-transparent text-center">Hot Summer Nights</h5>
-            <p class="card-content para fs-100 text-center">20% off on the best availble availble room rate</p>
-            </div>
-        </div>
-
-        <div class="d-flex flex-column flex-lg-row border rounded-4 overflow-hidden mt-5">
-            <a href="#"><img class="offer-image" src="assets/images/image-4.png" alt="offer-3"></a>
-            <div class="col-6 p-2">
-                <h5 class="card-header border-0 bg-transparent text-center">Book&Enjoy</h5>
-            <p class="para fs-100 text-center">20% off on the  best availble availble room rate</p>
-            </div>
-        </div>
-
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Offer section closes --> 
-
-
-    <!-- Hotel facilities -->
-    <section class="facility">
-        <div class="container mt-5">
-            <div class="row d-flex flex-column flex-lg-row">
-
-                <div class="col-12 col-lg-6">
-                    <img width="80%" class="rounded-5 mx-auto" src="assets/images/image-1.png" alt="">
-                </div>
-
-                <div class="col mt-5 col-lg-6 ">
-                    <div class="row mx-auto">
-                    <h1 class="fw-bold fs-700">The Best Holidays Start Here!</h1>
-                    </div>
-
-                    <div class="row px-2 mx-auto">
-                        <p class="para my-3">Book your hotel with us and don't forget to grab an awesome hotel deal to save massive on yout stay.</p>
-                    </div>
-
-                    <div class="row mx-auto">
-                        <div class="col-7 col-lg-4 mx-lg-auto p-2">
-                            <i class="fa-1 fa-solid fa-utensils"></i>
-                            <h3 class="fw-bold fs-300">Quality Food</h3>
-                            <p class="para">Departure defective arranging raptuyous did. Conduct denied adding worth little.</p> 
-                        </div>
-
-                        <div class="col-7 col-lg-4  mx-lg-auto p-2">
-                            <i class="fa-2 fa-solid fa-stopwatch"></i>
-                            <h3 class="fw-bold fs-300">Quick Services</h3>
-                            <p class="para">Sipposing so be resolving breakfast am or perfectly.</p>
-                        </div>
-                    </div>
-
-                    <div class="row mx-auto">
-                        <div class="col-7 col-lg-4  mx-lg-auto p-2">
-                            <i class="fa-3 fa-solid fa-shield-halved"></i>
-                            <h3 class="fw-bold fs-300">High Security</h3>
-                            <p class="para">Arranging rapturous did belive him all had support.</p> 
-                        </div>
-
-                        <div class="col-7 col-lg-4  mx-lg-auto p-2">
-                           <i class="fa-4 fa-solid fa-bolt-lightning"></i>
-                            <h3 class="fw-bold fs-300">24 Hour Alert</h3>
-                            <p class="para">Rapturous did belive him all had support.</p>
-                        </div>
-                    </div>
-
-                </div>
-        </div> 
-    </section>
-
-    <!-- Hotel facilities closes -->
-
-    <!-- Featuring hotels -->
-    <section>
-        <div class="container">
-            <div class="row">
-                    <h1 class="fw-bold fs-700 text-center">Featured Hotels</h1>
-            </div>
-
-            <div class="row d-flex flex-column flex-lg-row mt-5">
-                <div class="col col-lg-3 card border-0">
-
-                    <img  class="rounded-4 hotels" src="assets/images/resort-img-1.png" alt="">
-                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>New York</span>
-                    <span class="fw-bold">Baga Comfort</span>
-
-                    <div class="row">
-                        <span class="col-8 text-success"><strong>$455</strong>/staring at</span>
-                        <span class="hotel-rating col ms-4"><strong>4.5</strong><i class="fa-solid fa-star"></i></span>
-                    </div>
-                </div>
-
-                <div class="col col-lg-3 card border-0">
-
-                    <img class="rounded-4 hotels" src="assets/images/resort-img-2.png" alt="">
-                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>California</span>
-
-                    <span class="rounded-5 bg-dark text-light">
-                        <img src="assets/icons/location-dark.png" alt="">
-                    </span>
-
-                    <span class="fw-bold">New Apollo Hotel</span>
-
-                    <div class="row">
-                        <span class="col-8 text-success"><strong>$585</strong>/staring at</span>
-                        <span class="hotel-rating col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
-                    </div>
-                </div>
-
-                <div class="col col-lg-3 card border-0">
-
-                    <img class="rounded-4 hotels" src="assets/images/resort-img-3.png" alt="">
-                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Los Angelos</span>
-                    <span class="fw-bold fs-100">New Age Hotel</span>
-
-                    <div class="row">
-                        <span class="col-8 text-success"><strong>$385</strong>/staring at</span>
-                        <span class="hotel-rating col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
-                    </div>
-                </div>
-
-                <div class="col col-lg-3 card border-0">
-
-                    <img class="rounded-4" src="assets/images/resort-img-4.png" alt="">
-                    <span class="col rounded-4 px-2 hotel-location bg-dark text-light"><i class="fa-solid fa-location-dot"></i>Chicago</span>
-                    <span class="fw-bold">Helios Beach Resort</span>
-
-                    <div class="row">
-                        <span class="col-8 text-success"><strong>$665</strong>/staring at</span>
-                        <span class="hotel-rating col ms-4"><strong>4.8</strong><i class="fa-solid fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featuring hotel section closes -->
-
-    <!-- Company's logos -->
-
-    <section>
-        <div class="container ">
-            <div class="row mt-5 d-flex justify-content-center">
-                <div class="col-6 col-lg-1 mx-auto"><img src="assets/images/company-1.png" alt=""></div>
-                <div class="col-6 col-lg-1 mx-auto"><img src="assets/images/company-2.png" alt=""></div>
-                <div class="col-6 col-lg-1 mx-auto"><img src="assets/images/company-3.png" alt=""></div>
-                <div class="col-6 col-lg-1 mx-auto"><img src="assets/images/company-4.png" alt=""></div>
-                <div class="col-6 col-lg-1 mx-auto"><img src="assets/images/company-5.png" alt=""></div>
-                <div class="col-6 col-lg-1 mx-auto"><img src="assets/images/company-6.png" alt=""></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Company's logo closes -->
-
-
-    <!-- Quote by ceo -->
-        <section>
-        <div class="container mt-5">
-            <div class="row d-flex flex-column flex-lg-row">
-
-                <div class="col-12 col-lg-6">
-                    <img width="80%" class="rounded-5 mx-auto" src="assets/images/reviews.png" alt="">
-                </div>
-
-                <div class="col mt-5 col-lg-4 ">
-                    
-                    <div class="row quote">
-                        <div class="col-1 mb-3">
-                            <i class="fa-solid fa-quote-left"></i>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <p>Moonligth newspaper up its enjoyment agrreable depending.Timed voice share led him to eiden noisy young. at weddings believed in laughing.</p>
-                    </div>
-
-                    <div class="row d-flex">
-                       <span class="rating">
-                        <i class="fa-solid fa-star"></i>
-                       <i class="fa-solid fa-star"></i>
-                       <i class="fa-solid fa-star"></i>
-                       <i class="fa-solid fa-star"></i> 
-                       <i class="fa-solid fa-star-half-stroke"></i>
-                       </span>
-
-                       <span class="fw-bold">Billy Vasquez</span>
-                       <span class="para">CEO of apple</span>
-                    </div>
-                    
-
-                </div>
-        </div> 
-    </section>
-
-    <!-- Qoute by ceo closes -->
-
-    <!-- Nearby visiting places -->
-
-    <section>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="row">
-                    <h1 class="fw-bold fs-700 text-center">Explore Nearby</h1>
-            </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-6 col-lg-2 card border-0 px-5  text-center">
-                    <img class="rounded-circle" src="assets/images/city-img.png" alt="">
-                    <span class="fw-bold">San francisco</span>
-                    <span class="para">13 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-2.png" alt="">
-                    <span class="fw-bold">Los Angeles</span>
-                    <span class="para">13 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-3.png" alt="">
-                    <span class="fw-bold">Miami</span>
-                    <span class="para">25 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-4.png" alt="">
-                    <span class="fw-bold">Sanjosh</span>
-                    <span class="para">23 min drive</span>
-                </div>
-                
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-5.png" alt="">
-                    <span class="fw-bold">New York</span>
-                    <span class="para">78 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-6.png" alt="">
-                    <span class="fw-bold">North Justen</span>
-                    <span class="para">18 min drive</span>
-                </div>
-            </div>
-            <div class="row mt-5">
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-7.png" alt="">
-                    <span class="fw-bold">Rio</span>
-                    <span class="para">50 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-8.png" alt="">
-                    <span class="fw-bold">Las Vegas</span>
-                    <span class="para">55 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-9.png" alt="">
-                    <span class="fw-bold">Texas</span>
-                    <span class="para">39 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-10.png" alt="">
-                    <span class="fw-bold">Chicoga</span>
-                    <span class="para m0">120 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-11.png" alt="">
-                    <span class="fw-bold">New Keagon</span>
-                    <span class="para">40 min drive</span>
-                </div>
-
-                <div class="col-6 col-lg-2 card border-0 px-5 text-center">
-                    <img class="rounded-circle" src="assets/images/city-img-12.png" alt="">
-                    <span class="fw-bold">Oslo</span>
-                    <span class="para">30 min drive</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nearby visiting places closes -->
-
-    <!-- Help/connect with us -->
-
-    <section class="bg-d connect-withus">
-        <div class="container">
-            <div class="row gap-5 mx-auto p-5">
-                <div class="col-10 col-lg-3 col-md-5 card d-flex flex-row p-2">
-                     <i class="fa-solid fa-hand-holding-medical"></i>
-                    <div>
-                        <h5 class="fw-bold fs-200">24x7 Help</h5>
-                        <p class="para">If we fall short of your expectations in any way let us know.</p>
-                    </div>
-                </div>
-                <div class="col-10 col-lg-3 col-md-5 card d-flex d-flex flex-row p-2 me-1">
-                    <i class="fa-solid fa-hand-holding-heart"></i>
-                    <div>
-                        <h5 class="fw-bold fs-200">Payment Trust</h5>
-                        <p class="para">All refunds come with no quetsions asked guarantee</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5 col-md-5 find-us">
-                    <h5 class="fw-bold fs-200">Download app</h5>
-                    <div class="row gap-5">
-                        <div class="row col-6 col-lg-5 bg-dark text-light card border-0 rounded-1 d">
-                        <div class="d-flex flex-row align-items-center">
-                            <i class="fa-brands fa-google-play"></i>
-                            <div>
-                            <span class="fs-100">GET IT ON</span>
-                            <h5 class="fs-100">Google PLay</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row row col-6 col-lg-6 bg-dark text-light card border-0 rounded-1">
-                        <div class="d-flex flex-row align-items-center">
-                            <i class="fa-brands fa-apple"></i>
-                            <div>
-                            <span class="fs-100">Download on</span>
-                            <h5 class="fs-100">App Store</h5>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Help/connect with us section closes -->
-     
-
-    <!-- footer -->
-
-    <footer class="footer bg-black text-light pt-5 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="d-flex gap-1 align-items-center mb-">
-                        <img width="15%" src="assets/images/dark-logo.png" alt="">
-                        <h5>Booking</h5>
-                    </div>
-                    <p class="pe-4">Departure defective arranging rapturous did believe him all had supported.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i> +1234 568 963</li>
-                        <li><i class="fa-solid fa-envelope me-2"></i> example@gmail.com</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-6 mb-4">
-                    <h5>Page</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">About us</a></li>
-                        <li class="mb-2"><a href="#">Contact us</a></li>
-                        <li class="mb-2"><a href="#">News and Blog</a></li>
-                        <li><a href="#">Meet a Team</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-6 mb-4">
-                    <h5>Link</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Sign up</a></li>
-                        <li class="mb-2"><a href="#">Sign in</a></li>
-                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#">Terms</a></li>
-                        <li class="mb-2"><a href="#">Cookie</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-lg-2 mb-4">
-                    <h5>Global Site</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">India</a></li>
-                        <li class="mb-2"><a href="#">California</a></li>
-                        <li class="mb-2"><a href="#">Indonesia</a></li>
-                        <li class="mb-2"><a href="#">Canada</a></li>
-                        <li><a href="#">Malaysia</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-lg-3 col-md-6 mb-4">
-                    <h5>Booking</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="#"><i class="fa-solid fa-hotel me-2"></i> Hotel</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#"><i class="fa-solid fa-plane me-2"></i> Flight</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#"><i class="fa-solid fa-earth-americas me-2"></i> Tour</a>
-                        </li>
-                        <li><a href="#">
-                            <i class="fa-solid fa-taxi me-2"></i> Cabs</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-12">
-                    <h5>Top Links</h5>
-                    <p>
-                        <a href="#">Flights</a> <a class="mx-2" href="#">Hotels</a>  <a class="mx-2" href="#">Tours</a>  <a class="mx-2" href="#">Cabs</a>  <a class="mx-2" href="#">About</a>  <a class="mx-2" href="#">Contact us</a>  <a class="mx-2" href="#">Blogs</a>  <a class="mx-2" href="#">Services</a>  <a class="mx-2" href="#">Detail page</a>  <a class="mx-2" href="#">Services</a>  <a class="mx-2" href="#">Policy</a>  <a class="mx-2" href="#">Testimonials</a>  <a class="mx-2" href="#">Newsletters</a>  <a class="mx-2" href="#">Podcasts</a>  <a class="mx-2" href="#">Protests</a>  <a href="#">NewsCyber</a>  <a class="mx-2" href="#">Education</a>  <a class="mx-2" href="#">Sports</a>  <a class="mx-2" href="#">Tech and Auto</a>  <a class="mx-2" href="#">Opinion</a>  <a class="mx-2" href="#">Share Market</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="row align-items-center mt-4">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h5>Payment & Security</h5>
-                    <div class="payment-icons">
-                        <img width="50%" src="assets/images/paypal.png" alt="PayPal">
-                    </div>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <h5>Follow us on</h5>
-                    <div class="social-icons">
-                        <a class="mx-2" href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="row mt-5">
-                <div class="col-md-6 mb-2 mb-md-0">
-                    <p class="mb-0">Copyrights ©2024 Booking. Build by Webestica.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="me-3">Privacy policy</a>
-                    <a href="#" class="me-3">Terms and conditions</a>
-                    <a href="#">Refund policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- footer closes -->
-
 </body>
 </html>
