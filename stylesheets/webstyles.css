@@ -199,3 +199,35 @@ form button{
     left: 145%;
     }
 }
+
+.fa-1,
+.fa-2,
+.fa-3,
+.fa-4{
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.fa-1{
+    color: #00ba84;
+    background-color: #e6f8f3;
+}
+
+.fa-2{
+    color: #d6293d;
+    background-color: #fbe9eb;
+}
+.fa-3{
+    color: #fd7e14;
+    background-color: #fff2e7;
+}
+.fa-4{
+    color: #17a2b8;
+    background-color: #e7f6f7;
+}
