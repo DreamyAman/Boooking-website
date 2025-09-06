@@ -99,7 +99,7 @@ body{
 .primary-button{
     cursor: pointer;
     border: 1px solid transparent;
-    border-radius: 1vmax;
+    border-radius: 0.5vmax;
     padding: 0.5em 1em;
     font-weight: var(--fw-600);
     background-color: var(--btn-bg-clr);
@@ -109,7 +109,7 @@ li .nav-link{
     text-decoration: none;
     color: black;
     border: 0;
-    border-radius: 1vmax;
+    border-radius: 0.5vmax;
 }
 
 li .nav-link:hover{
@@ -123,4 +123,79 @@ li .nav-link:hover{
 }
 .nav-link:hover i{
    color: #5143d9;
+}
+
+
+form i{
+    font-size: 3em;
+}
+
+form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 3%;
+    margin-left: 5%;
+    background-color: #5143d9;
+    color: white;
+}
+
+ .hotel-img{
+    position: relative;   
+ }
+
+ .sub-img-1{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    border: 2px solid white;
+ }
+
+  .sub-img-2{
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    border: 2px solid white;
+ }
+
+ .help-toggle i{
+    font-size: 2.5em;
+    color: #d6293d;
+ }
+
+.help-toggle{
+    color: black;
+    position: absolute;
+    right: 4%;
+    top: -6%;
+    background-color: rgba(255, 255, 255, 0.635);
+    padding: 0%;
+}
+ 
+
+@media (min-width:1000px){
+    .hotel-img{
+    position: relative;
+}
+
+.search-area {
+    position: absolute; 
+    top: 45%;
+    z-index: 10;
+    background-color: white;
+    margin: 0;
+}
+    form{
+    position: relative;
+    }
+
+    form .button{
+    position: absolute;
+    top: 15%;
+    left: 145%;
+    }
 }
