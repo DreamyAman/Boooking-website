@@ -90,7 +90,7 @@ body{
     color: var(--color-neutral-900);
 }
 
-.para{
+p{
     color: var(--clr-accent-100);
     font-size: var(--fs-100);
 }
