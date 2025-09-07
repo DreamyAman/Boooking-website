@@ -242,12 +242,23 @@ form button{
     font-size: 2.5em;
 }
 
-.fa-google-play,
-.fa-apple{
-    font-size: 2.3em;
+.facebook,
+.instagram,
+.twitter,
+.linkedin{
+    color: white;
+    border-radius: 0.5vmax;
 }
 
-.google-play,
-.apple{
-    height: 30px;
+.facebook{
+    background-color: #6183cf;
+}
+.instagram{
+    background-color: #cc3356;
+}
+.twitter{
+    background-color: #4bc0e0;
+}
+.linkedin{
+    background-color: #298ccb;
 }
